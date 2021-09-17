@@ -553,8 +553,8 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption=f"🏷 **ɴᴀᴍᴇ :** [{title[:25]}]({url})\n📥 **ᴅᴏᴡɴʟᴏᴀᴅ :** [ᴄʟɪᴄᴋ ʜᴇʀᴇ]{durl}\n💡 **ǫᴜᴇᴜᴇᴅ ᴀᴛ ᴘᴏsɪᴛɪᴏɴ :** `{position}`\n" \",
-                 + f"🎧 **ʀᴇǫᴜᴇsᴛ ʙʏ :** {message.from_user.mention}",
+            caption=f"🏷 **Nᴀᴍᴇ :** [{title[:25]}]({url})\n📥 **Dᴏᴡɴʟᴏᴀᴅ :** [ℂ𝕃𝕀ℂ𝕂 ℍ𝔼ℝ𝔼]{durl}\n💡 **Qᴜᴇᴜᴇᴅ Aᴛ Pᴏsɪᴛɪᴏɴ :** `{position}`\n" \
+                 + f"🎧 **Rᴇǫᴜᴇsᴛ Bʏ :** {message.from_user.mention}",
             reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -572,8 +572,8 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption=f"🏷 **ɴᴀᴍᴇ :** [{title[:25]}]({url})\n📥 **ᴅᴏᴡɴʟᴏᴀᴅ :** [ᴄʟɪᴄᴋ ʜᴇʀᴇ]{durl}\n💡 **sᴛᴀᴛᴜs :** `ᴘʟᴀʏɪɴɢ`\n" \",
-                 + f"🎧 **ʀᴇǫᴜᴇsᴛ ʙʏ :** {message.from_user.mention}",
+            caption=f"🏷 **Nᴀᴍᴇ :** [{title[:45]}]({url})\n📥 **Dᴏᴡɴʟᴏᴀᴅ :** [ℂ𝕃𝕀ℂ𝕂 ℍ𝔼ℝ𝔼]{durl}\n💡 **Sᴛᴀᴛᴜs :** `Playing`\n" \,
+                 + f"🎧 **Rᴇǫᴜᴇsᴛ Bʏ :** {message.from_user.mention}")
                 message.from_user.mention()
             ),
         )
