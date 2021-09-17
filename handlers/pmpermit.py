@@ -17,7 +17,7 @@ async def pmPermit(client: USER, message: Message):
                 return
             await USER.send_message(
                 message.chat.id,
-            f"✨ Pɪᴋᴀ Pɪᴋᴀ, I'ᴍ A Oғғɪᴄɪᴀʟ **Mᴜsɪᴄ Assɪsᴛᴀɴᴛ Oғ {BOT_NAME}.**\n\n❗️ **Nᴏᴛᴇs :**\n\n⫸ Dᴏɴ'ᴛ Sᴘᴀᴍ Mᴇssᴀɢᴇ.\n⫸ Dᴏɴ'ᴛ Sᴇɴᴅ Mᴇ Aɴʏᴛʜɪɴɢ Cᴏɴғɪᴅᴇɴᴛɪᴀʟ\n\n⨀ Jᴏɪɴ Tᴏ @{UPDATES_CHANNEL} \n⨀ Jᴏɪɴ Tᴏ @{GROUP_SUPPORT}\n\n👩🏻‍💻 Dᴇᴠ : @{OWNER_USERNAME}\n\n👩🏻‍🔧 Iғ Yᴏᴜ Wᴀɴᴛ Mᴇ Jᴏɪɴ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ, Sᴇɴᴅ Hᴇʀᴇ Yᴏᴜʀ Gʀᴏᴜᴘ Lɪɴᴋ, I Wɪʟʟ Jᴏɪɴᴇᴅ As Sᴏᴏɴ As Pᴏssɪʙʟᴇ.\n\n",
+            f"✨ Pɪᴋᴀ Pɪᴋᴀ, I'ᴍ A Oғғɪᴄɪᴀʟ **Mᴜsɪᴄ Assɪsᴛᴀɴᴛ Oғ {BOT_NAME}.**\n\n❗️ **Nᴏᴛᴇs :**\n\n⫸ Dᴏɴ'ᴛ Sᴘᴀᴍ Mᴇssᴀɢᴇ.\n⫸ Dᴏɴ'ᴛ Sᴇɴᴅ Mᴇ Aɴʏᴛʜɪɴɢ Cᴏɴғɪᴅᴇɴᴛɪᴀʟ\n\n⨀ Jᴏɪɴ Tᴏ @{UPDATES_CHANNEL} \n⨀ Jᴏɪɴ Tᴏ @{GROUP_SUPPORT}\n\n👩🏻‍💻 Dᴇᴠ : @iTs_Nitric\n\n👩🏻‍🔧 Iғ Yᴏᴜ Wᴀɴᴛ Mᴇ Jᴏɪɴ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ, Sᴇɴᴅ Hᴇʀᴇ Yᴏᴜʀ Gʀᴏᴜᴘ Lɪɴᴋ, I Wɪʟʟ Jᴏɪɴᴇᴅ As Sᴏᴏɴ As Pᴏssɪʙʟᴇ.\n\n",
             )
             return
 
