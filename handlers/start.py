@@ -32,52 +32,27 @@ async def _human_time_duration(seconds):
 @Client.on_message(command("start") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>✨ Pɪᴋᴀ Pɪᴋᴀ, Wᴇʟᴄᴏᴍᴇ</b> {query.from_user.mention}!\n\n💭 [{BOT_NAME}](t.me/{UPDATES_CHANNEL}) <b>Aʟʟᴏᴡs Yᴏᴜ Tᴏ Pʟᴀʏ Mᴜsɪᴄ Oɴ Gʀᴏᴜᴘs Tʜʀᴏᴜɢʜ Tʜᴇ Nᴇᴡ Tᴇʟᴇɢʀᴀᴍ's Vᴏɪᴄᴇ Cʜᴀᴛs!</b>\n\n💡 <b>Fɪɴᴅ Oᴜᴛ</b> Aʟʟ Tʜᴇ <b>Bᴏᴛ</b>'s <b>Cᴏᴍᴍᴀᴍᴅs</b> Aɴᴅ Hᴏᴡ Tʜᴇʏ <b>Wᴏʀᴋ</b> Bʏ Cʟɪᴄᴋɪɴɢ Oɴ Tʜᴇ » 📚 <b>Cᴏᴍᴍᴀɴᴅs</b> Bᴜᴛᴛᴏɴ!""",
+        f"""<b>📌 **Holla, {message.from_user.first_name}** \n
+💭 **[{BOT_NAME}](https://t.me/ElrixXBot) I Am A Voice Call Group Music Player. For Info On How To Use Me, You Can Type /help**
+</b>""",
         reply_markup=InlineKeyboardMarkup(
-           [ 
+            [ 
                 [
                     InlineKeyboardButton(
-                        "➕ Sᴜᴍᴍᴏɴ Mᴇ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                        "➕ Add Me To Your Group ➕", url=f"https://t.me/ElrixXBot?startgroup=true")
                 ],[
                     InlineKeyboardButton(
-                         "📚 Dᴇᴍᴏ", callback_data="https://t.me/Dramaa_Club"
+                         "Commands", url="https://telegra.ph/%F0%9D%99%80%F0%9D%99%87%F0%9D%99%A7%F0%9D%99%9E%F0%9D%99%AD--%F0%9D%99%88%F0%9D%99%AA%F0%9D%99%A8%F0%9D%99%9E%F0%9D%99%98-09-03-2"
                     ),
                     InlineKeyboardButton(
-                        "❤️ Dᴏɴᴀᴛᴇ", url=f"https://t.me/{OWNER_USERNAME}")
+                        "Donate", url=f"https://t.me/Oo_Elrix")
                 ],[
                     InlineKeyboardButton(
-                        "👥 Oғғɪᴄɪᴀʟ Gʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "Official Group", url=f"https://t.me/Dramaa_Club"
                     ),
                     InlineKeyboardButton(
-                        "📣 Oғғɪᴄɪᴀʟ Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}")
-                ],[
-                    InlineKeyboardButton(
-                        "❗️ Iɴғᴏ & Aʙᴏᴜᴛ 👨‍💻", callback_data="cbinfo")
-                ],[
-                    InlineKeyboardButton(
-                        "🧪 Sᴏᴜʀᴄᴇ Cᴏᴅᴇ 🧪", url="https://t.me/Sanki_BOTs"
-                    )
+                        "Official Channel", url=f"https://t.me/Sanki_BOTs")
                 ]
-            ]
-        ),
-
-
-@Client.on_message(command(["start", f"start@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
-async def start(client: Client, message: Message):
-    current_time = datetime.utcnow()
-    uptime_sec = (current_time - START_TIME).total_seconds()
-    uptime = await _human_time_duration(int(uptime_sec))
-    await message.reply_text(
-        f"""✅ **Pɪᴋᴀ Pɪᴋᴀ, ʙᴏᴛ ɪs ʀᴜɴɴɪɴɢ**\n<b>⚡ **ᴜᴘᴛɪᴍᴇ :**</b> `{uptime}`""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "👥 ɢʀᴏᴜᴘ", url=f"https://t.me/Dramaa_Club"
-                    ),
-                    InlineKeyboardButton(
-                        "ᴄʜᴀɴɴᴇʟ 📣", url=f"https://t.me/Sanki_BOTs"
-                    ]
             ]
         ),
      disable_web_page_preview=True
@@ -86,13 +61,34 @@ async def start(client: Client, message: Message):
 
 @Client.on_message(command(["start", f"start@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
+    current_time = datetime.utcnow()
+    uptime_sec = (current_time - START_TIME).total_seconds()
+    uptime = await _human_time_duration(int(uptime_sec))
     await message.reply_text(
-        f"""<b>👋🏻 Pɪᴋᴀ Pɪᴋᴀ, {message.from_user.mention()}, ᴘʟᴇᴀsᴇ ᴛᴀᴘ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ sᴇᴇ ᴛʜᴇ ʜᴇʟᴘ ᴍᴇssᴀɢᴇ ʏᴏᴜ ᴄᴀɴ ʀᴇᴀᴅ ғᴏʀ ᴜsɪɴɢ ᴛʜɪs ʙᴏᴛ</b>""",
+        f"""✅ **Bot Is Running**\n<b>⚡ **Uptime :**</b> `{uptime}`""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="❔ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ", url=f"https://t.me/PikachuXdBot?start=help"
+                        "Group", url=f"https://t.me/Dramaa_Club"
+                    ),
+                    InlineKeyboardButton(
+                        "Channel", url=f"https://t.me/Sanki_BOTs"
+                    )
+                ]
+            ]
+        )
+    )
+
+@Client.on_message(command(["help", f"help@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
+async def help(client: Client, message: Message):
+    await message.reply_text(
+        f"""<b>👋🏻 Hello {message.from_user.mention()}, Please Tap The Button Below To See The Help Message You Can Read For Using This Bot</b>""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        text="❔ HOW TO USE ME", url=f"https://t.me/ElrixXBot?start=help"
                     )
                 ]
             ]
@@ -102,11 +98,11 @@ async def start(client: Client, message: Message):
 @Client.on_message(command("help") & filters.private & ~filters.edited)
 async def help_(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>👋🏻 Pɪᴋᴀ Pɪᴋᴀ, {message.from_user.mention()}, ᴡᴇʟᴄᴏᴍᴇ ᴛo ʜᴇʟᴘ ᴍᴇɴᴜ ✨
+        f"""<b>Hello {message.from_user.mention()}, Welcome To Help Menu ✨
 \n📌HOW TO USE ME ?
 \n1. first add me to your group.
 2. promote me as admin and give all permission.
-3. then, add @PikachuXdAssistant to your group or type /userbotjoin.
+3. then, add @ElrixXAssistant to your group or type /userbotjoin.
 3. make sure you turn on the voice chat first before start playing music.
 \n📌**commands for all user:**
 \n/play (song name) - play song from youtube
@@ -145,15 +141,15 @@ async def help_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "👥 ɢʀᴏᴜᴘ", url=f"https://t.me/Dramaa_Club"
+                        "GROUP", url=f"https://t.me/Dramaa_Club"
                     ),
                     InlineKeyboardButton(
-                        "ᴄʜᴀɴɴᴇʟ 📣", url=f"https://t.me/Sanki_BOTs"
+                        "CHANNEL", url=f"https://t.me/Sanki_BOTs"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "💚 ᴅᴇᴠᴇʟᴏᴘᴇʀ 💚", url=f"https://t.me/iTs_Nitric"
+                        "DEVELOPER", url=f"https://t.me/Oo_Elrix"
                     )
                 ]
             ]
@@ -164,10 +160,10 @@ async def help_(client: Client, message: Message):
 @Client.on_message(command(["ping", f"ping@{BOT_USERNAME}"]) & ~filters.edited)
 async def ping_pong(client: Client, message: Message):
     start = time()
-    m_reply = await message.reply_text("Pɪᴋᴀ Pɪᴋᴀ, ᴀᴍ ᴘɪɴɢɪɴɢ...")
+    m_reply = await message.reply_text("Pinging...")
     delta_ping = time() - start
     await m_reply.edit_text(
-        "`Pɪᴋᴀ Pɪᴋᴀ, ᴘɪɴɢ ᴘᴏɴɢ !!`\n"
+        "`PONG !!`\n"
         f"⚡️ `{delta_ping * 1000:.3f} Ms`"
     )
 
@@ -179,7 +175,7 @@ async def get_uptime(client: Client, message: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await message.reply_text(
-        "🤖 Pɪᴋᴀ Pɪᴋᴀ, ᴍɪɴᴇ sᴛᴀᴛᴜs :\n"
-        f"• **ᴜᴘᴛɪᴍᴇ :** `{uptime}`\n"
-        f"• **sᴛᴀʀᴛ ᴛɪᴍᴇ :** `{START_TIME_ISO}`"
+        "🤖 Bot Status :\n"
+        f"• **Uptime :** `{uptime}`\n"
+        f"• **Start Time :** `{START_TIME_ISO}`"
     )
