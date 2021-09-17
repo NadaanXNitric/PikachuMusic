@@ -572,7 +572,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption=f"👀 **Nᴀᴍᴇ :** [{title[:45]}]({url})\n📥 **Dᴏᴡɴʟᴏᴀᴅ :** [ℂ𝕃𝕀ℂ𝕂 ℍ𝔼ℝ𝔼]{durl}\n💡 **Sᴛᴀᴛᴜs :** `Playing`\n" \,
+            caption=f"👀 **Nᴀᴍᴇ :** [{title[:45]}]({url})\n📥 **Dᴏᴡɴʟᴏᴀᴅ :** [Cʟɪᴄᴋ Hᴇʀᴇ]{durl}\n💡 **Sᴛᴀᴛᴜs :** `Playing`\n" \,
                  + f"😽 **Rᴇǫᴜᴇsᴛ Bʏ :** {message.from_user.mention}")
                 message.from_user.mention()
             ),
