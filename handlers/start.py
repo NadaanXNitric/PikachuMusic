@@ -42,13 +42,14 @@ async def start_(client: Client, message: Message):
                         "➕ Add Me To Your Group ➕", url=f"https://t.me/ElrixXBot?startgroup=true")
                 ],[
                     InlineKeyboardButton(
-                         "Commands", url="https://telegra.ph/%F0%9D%99%80%F0%9D%99%87%F0%9D%99%A7%F0%9D%99%9E%F0%9D%99%AD--%F0%9D%99%88%F0%9D%99%AA%F0%9D%99%A8%F0%9D%99%9E%F0%9D%99%98-09-03-2"
+                         "Commands", url="https://telegra.ph/%E1%B4%98%C9%AA%E1%B4%8B%E1%B4%80%E1%B4%84%CA%9C%E1%B4%9C%CF%87%E1%B4%85-09-17"
                     ),
                     InlineKeyboardButton(
-                        "Donate", url=f"https://t.me/Oo_Elrix")
+                        "Donate", url=f"https://t.me/iTs_Nitric")
                 ],[
                     InlineKeyboardButton(
-                        "Official Group", url=f"https://t.me/Dramaa_Club"
+                        "O
+Demo Group", url=f"https://t.me/Dramaa_Club"
                     ),
                     InlineKeyboardButton(
                         "Official Channel", url=f"https://t.me/Sanki_BOTs")
