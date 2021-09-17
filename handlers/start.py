@@ -32,8 +32,8 @@ async def _human_time_duration(seconds):
 @Client.on_message(command("start") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>📌 **Holla, {message.from_user.first_name}** \n
-💭 **[{BOT_NAME}](https://t.me/ElrixXBot) I Am A Voice Call Group Music Player. For Info On How To Use Me, You Can Type /help**
+        f"""<b>📌 **Holla, I'm 💭 **[{BOT_NAME}](https://t.me/PikachuXdBot)** \n
+💭 **I Am A Voice Call Group Music Player. For Info On How To Use Me, You Can Type /help**
 </b>""",
         reply_markup=InlineKeyboardMarkup(
             [ 
