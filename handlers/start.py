@@ -77,14 +77,15 @@ async def start(client: Client, message: Message):
                     ),
                     InlineKeyboardButton(
                         "ᴄʜᴀɴɴᴇʟ 📣", url=f"https://t.me/Sanki_BOTs"
-                    )
-                ]
+                    ]
             ]
-        )
+        ),
+     disable_web_page_preview=True
     )
 
-@Client.on_message(command(["help", f"help@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
-async def help(client: Client, message: Message):
+
+@Client.on_message(command(["start", f"start@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
+async def start(client: Client, message: Message):
     await message.reply_text(
         f"""<b>👋🏻 Pɪᴋᴀ Pɪᴋᴀ, {message.from_user.mention()}, ᴘʟᴇᴀsᴇ ᴛᴀᴘ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ sᴇᴇ ᴛʜᴇ ʜᴇʟᴘ ᴍᴇssᴀɢᴇ ʏᴏᴜ ᴄᴀɴ ʀᴇᴀᴅ ғᴏʀ ᴜsɪɴɢ ᴛʜɪs ʙᴏᴛ</b>""",
         reply_markup=InlineKeyboardMarkup(
