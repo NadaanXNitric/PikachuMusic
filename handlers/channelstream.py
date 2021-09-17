@@ -553,8 +553,7 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption=f"🏷 **Nᴀᴍᴇ :** [{title[:25]}]({url})\n📥 **Dᴏᴡɴʟᴏᴀᴅ :** [ℂ𝕃𝕀ℂ𝕂 ℍ𝔼ℝ𝔼]{durl}\n💡 **Qᴜᴇᴜᴇᴅ Aᴛ Pᴏsɪᴛɪᴏɴ :** `{position}`\n" \
-                 + f"🎧 **Rᴇǫᴜᴇsᴛ Bʏ :** {message.from_user.mention}",
+            caption=f"#⃣  Your Requested Song **queued** At Position {position} !",
             reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -572,8 +571,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption=f"👀 **Nᴀᴍᴇ :** [{title[:45]}]({url})\n📥 **Dᴏᴡɴʟᴏᴀᴅ :** [Cʟɪᴄᴋ Hᴇʀᴇ]{durl}\n💡 **Sᴛᴀᴛᴜs :** `Playing`\n" \,
-                 + f"😽 **Rᴇǫᴜᴇsᴛ Bʏ :** {message.from_user.mention}")
+            caption=f"🎧 **Playing** The Song Requested By {} .".format(
                 message.from_user.mention()
             ),
         )
