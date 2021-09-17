@@ -45,11 +45,10 @@ async def start_(client: Client, message: Message):
                          "Commands", url="https://telegra.ph/%E1%B4%98%C9%AA%E1%B4%8B%E1%B4%80%E1%B4%84%CA%9C%E1%B4%9C%CF%87%E1%B4%85-09-17"
                     ),
                     InlineKeyboardButton(
-                        "Donate", url=f"https://t.me/iTs_Nitric")
+                        "Donate", url=f"https://t.me/its_Nitric")
                 ],[
                     InlineKeyboardButton(
-                        "O
-Demo Group", url=f"https://t.me/Dramaa_Club"
+                        "Fun Group", url=f"https://t.me/Dramaa_Club"
                     ),
                     InlineKeyboardButton(
                         "Official Channel", url=f"https://t.me/Sanki_BOTs")
